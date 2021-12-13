@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="/images/logo.svg" alt="logo" srcset="">
+    </header>
+    <main class="container">
+        <div class="cal-container">
+            <div class="calculation">
+                <div class="bill-section">
+                    <p id="bill">Bill</p>
+                    <input type="text" id="bill-amount" name="billAmount" class="input" placeholder="Enter The Bill Amount">
+                </div>
+                <div class="select-tip-section">
+                    <p>Select Tip %</p>
+                    <div class="select-tip">
+                        <button class="tip-per" type="button" value="5">5%</button>
+                        <button class="tip-per" type="button" value="10">10%</button>
+                        <button class="tip-per" type="button" value="10">15%</button>
+                        <button class="tip-per" type="button" value="20">20%</button>
+                        <button class="tip-per" type="button" value="40">40%</button>
+                        <input type="text" class="input" id="manual-tip">
+                    </div>
+                </div>
+                <div class="num-of-people">
+                    <p class="nop">Number Of People</p>
+                    <p class="nan">Can't be zero</p>
+                    <input type="text" class="input" id="input-nop" placeholder="Enter Num Of People">
+                </div>
+            </div>
+            <div class="show-cal">
+                <div class="show-amount-section">
+                    <div class="show-amount">
+                        <span class="tpp">
+                        <p class="tip-total">Tip Amount</p>
+                        <p class="per-person">/ person</p>
+                        </span>
+                        <h1 class="amount">$<span id="tip-amount">0.00</span></h1>
+                    </div>
+                    <div class="show-amount">
+                        <span class="tpp">
+                        <p class="tip-total">Total</p>
+                        <p class="per-person">/ person</p>
+                        </span>
+                        <h1 class="amount">$<span id="total-peo">0.00</span></h1>
+                    </div>
+                </div>
+                <div class="reset-section">
+                    <button type="reset" id="reset-btn">RESET</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

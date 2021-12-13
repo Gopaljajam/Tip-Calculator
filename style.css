@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d4eeff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 3vh;
+    padding: 5vmax;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+main {}
+
+p {}
+
+.cal-container {
+    width: 60vw;
+    background: #fff;
+    margin: auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 2%;
+}
+
+.calculation {
+    padding: 0 5vw 0 0;
+}
+
+#bill-amount,
+.input {
+    background: transparent;
+    border: 2px solid #93E7D3;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px 1px rgba(147, 231, 211, 0.25);
+    border-radius: 2px;
+    margin: 0.5rem 0 1rem 0;
+    font-size: medium;
+    padding: 0.5rem;
+    text-align: right;
+    width: 100%;
+}
+
+#bill-amount {
+    background: url(/images/icon-dollar.svg) no-repeat;
+    background-position: 0.5rem;
+}
+
+#input-nop {
+    background: url(/images/icon-person.svg) no-repeat;
+    background-position: 0.5rem;
+}
+
+.select-tip-section {
+    margin: 0.55rem 0;
+}
+
+.select-tip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tip-per {
+    color: #fff;
+    background: #3e817a;
+    text-align: center;
+    padding: 0.5vw;
+    border-radius: 2px;
+    border: 2px solid #3e817a;
+}
+
+.tip-per:hover {
+    background: #009688;
+    transition: all 0.4s ease;
+}
+
+.select-tip input {
+    margin: 0;
+}
+
+.num-of-people {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.nan {
+    color: rgb(224, 86, 86);
+    display: none;
+}
+
+#input-nop {
+    grid-column: 1/-1;
+}
+
+.show-cal {
+    background: #3C615A;
+    border-radius: 15px;
+    padding: 1.5rem 3vw;
+}
+
+.show-amount-section {
+    margin-bottom: 4rem;
+}
+
+.show-amount {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 6vh;
+}
+
+.amount span {
+    grid-row: span 2;
+    font-size: 2.5rem;
+}
+
+.amount {
+    font-size: 2rem;
+    color: #59C9AE;
+}
+
+.tpp {
+    line-height: 1.2 rem;
+}
+
+.tip-total {
+    color: #D7F1E8;
+}
+
+.per-person {
+    color: #7cb39f;
+}
+
+.reset-section {}
+
+#reset-btn {
+    background: #7FC2B2;
+    border: none;
+    width: 100%;
+    padding: 2vmin;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .cal-container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        width: 70%;
+    }
+    .calculation {
+        padding: 0;
+    }
+    .num-of-people {
+        padding-bottom: 5vmin;
+    }
+}
+
+. {
+    background: red;
+}
