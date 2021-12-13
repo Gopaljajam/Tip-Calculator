@@ -1,4 +1,4 @@
-// selecting the inputs btns and show calculation
+/// selecting the inputs btns and show calculation
 const billAmount = document.querySelector("#bill-amount");
 const inputNOP = document.querySelector("#input-nop");
 const tipPercent = document.querySelectorAll(".tip-per");
@@ -17,7 +17,9 @@ manualTip.addEventListener("input", tipPerFunc);
 
 resetBtn.addEventListener('click', () => {
     tipAmountShow.innerHTML = "0.00";
-    totalPeopleShow.innerHTML = "0.00"
+    totalPeopleShow.innerHTML = "0.00";
+    billAmount.value = null;
+    inputNOP.value = null;
 })
 
 function tipPerFunc() {
