@@ -56,12 +56,12 @@ p {}
 }
 
 #bill-amount {
-    background: url(/images/icon-dollar.svg) no-repeat;
+    background: url(images/icon-dollar.svg) no-repeat;
     background-position: 0.5rem;
 }
 
 #input-nop {
-    background: url(/images/icon-person.svg) no-repeat;
+    background: url(images/icon-person.svg) no-repeat;
     background-position: 0.5rem;
 }
 
