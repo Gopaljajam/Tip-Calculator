@@ -20,6 +20,7 @@ resetBtn.addEventListener('click', () => {
     totalPeopleShow.innerHTML = "0.00";
     billAmount.value = null;
     inputNOP.value = null;
+    manualTip.value = null;
 })
 
 function tipPerFunc() {
